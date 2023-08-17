@@ -14,6 +14,7 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { useEdtiorContext } from '../../Context/EditorContext';
+import AnnotationButton from '../../Extensions/TextAnnotation/AnnotationButton';
 
 
 interface TabPanelProps {
@@ -100,6 +101,8 @@ const HomeTabMenus = () => {
       )}
       <MenuDivider />
       <MenuButtonBlockquote />
+      <MenuDivider />
+      <AnnotationButton />
       <MenuDivider />
     </>
   )

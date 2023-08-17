@@ -38,6 +38,8 @@ import {
   TableImproved,
 } from "mui-tiptap";
 import TrackChangeExtension from "./Extensions/TrackChanges/TrackChanges";
+import TextAnnotation from "./Extensions/TextAnnotation/TextAnnotation";
+import { CustomParagraph } from "./Extensions/CustomParagraph/CustomParagraph";
 
 export type UseExtensionsOptions = {
   /** Placeholder hint to show in the text input area before a user types a message. */
@@ -115,7 +117,7 @@ export default function useExtensions({
       HardBreak,
       ListItem,
       OrderedList,
-      Paragraph,
+      // Paragraph,
       CustomSubscript,
       CustomSuperscript,
       Text,
@@ -180,6 +182,10 @@ export default function useExtensions({
           // myTrackChangeEnabled = status
         }
       }),
+
+      TextAnnotation,
+
+      CustomParagraph, 
 
     ];
   }, [placeholder]);
